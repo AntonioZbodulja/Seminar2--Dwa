@@ -1,0 +1,561 @@
+﻿body {
+background-color: #F6FCFF !important;
+/*margin: 0;
+background-image:url('background.jpg');
+background-repeat: no-repeat;*/
+color: #393c3d !important;
+font-size: 18px !important;
+margin: 0; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1, h2, h3, h4{
+margin: 0 !important;
+padding: 0 !important;
+}
+.paginacija{
+float: center;
+width: 100%;
+margin-top: 5%;
+margin-left: 25%;
+}
+.paginacija ul li a{
+padding: 10px;
+background-color: #DDE3E6;
+}
+.paginacija ul li{
+display: inline-block;
+padding: 10px;
+}
+.paginacija ul{
+list-style-type: none;
+float: left;
+}
+/*checkbox kod predaje oglasa za karakteristike da-ne*/
+
+/* SLIDE TWO */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+/* ROUNDED ONE */
+.roundedOne {
+	width: 28px;
+	height: 28px;
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+	margin: 20px 10px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.roundedOne label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	left: 4px;
+	top: 4px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.roundedOne label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #00bf00;
+
+	background: -webkit-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -moz-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -o-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -ms-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: linear-gradient(top, #00bf00 0%, #009400 100%);
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	top: 2px;
+	left: 2px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.roundedOne label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.roundedOne input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/*popis oglasa kategorija*/
+.oglas{
+border: 1px solid gray;
+height: 201px;
+border-radius: 6px;
+background-color:#DDE3E6;
+/*margin-left: 16%;*/
+margin-top: 4% !important;
+right: 0;
+}
+.oglas-neaktivan{
+border: 1px solid red;
+height: 201px;
+border-radius: 6px;
+background-color:#DDE3E6;
+/*margin-left: 16%;*/
+margin-top: 4% !important;
+right: 0;
+}
+
+.slika-mjesta{
+width: 200px;
+height: 200px;
+margin: 10px;
+float: left;
+}
+.slika-mjesta img{
+max-height: 180px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.cijena select{
+width: 120px;
+}
+/*oglasi sidebar*/
+.sidebar{
+/*display: inline-block;*/
+}
+/*popis oglasa kategorija*/
+
+/*oglas pojedinacni*/
+.sidebar-right{
+/*display: inline-block;*/
+}
+.oglasi-content{
+width: 100%;
+}
+.table-podaci-oglas td{
+padding-top: 10px;
+}
+.naslov-oglasa-pojedinacno{
+margin-left: 10px;
+margin-bottom: 15px;
+font-size: 20px;
+}
+.dodatne-slike-oglasa{
+width: 22%;
+max-height: 160px;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 30px;
+display: block;
+float: left;
+}
+.slike-izmjena-oglasa{
+width: 18%;
+max-height: 160px;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 30px;
+display: block;
+float: left;
+}
+
+.kratkiopis{
+float: left;
+margin-top: 10px;
+width: 400px;
+height: 125px;
+font-size: 14px;
+}
+
+.naslov-oglasa{
+width: 400px;
+float: left;
+margin-top: 10px;
+}
+.cijena{
+float: left;
+bottom: 10px;
+right: 10px;
+}
+/*oglasi*/
+
+.header{
+background-color: #CAE9FF;
+color: #393c3d;
+height: 50px;
+font-size: 24px;
+padding-top: 5px;
+position: relative;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+}
+
+.header h2{
+font-size: 24px;
+margin: 0;
+float: left;
+color: #007AB8;
+font-family: vyara;
+}
+.header-left{
+margin-left: 65px;
+}
+.header-right{
+float: right;
+margin-right: 65px;
+padding-top: 10px;
+font-size: 18px;
+}
+.header-right a{
+padding-right: 10px;
+}
+.cover{
+background-image: url('images/cover1.jpg');
+width: 100%;
+height: 500px;
+background-size: cover;
+font-family: Vyara,Arial;
+}
+.cover h2{
+font-family: Vyara;
+}
+.cover-search{
+float: center;
+max-width: 995px;
+margin: 0 auto;
+padding-top: 150px;
+color: white;
+text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.8);
+
+}
+.cover-search-in{
+max-width: 800px;
+background-color: rgba(57, 60, 61, 0.2);
+font-size: 22px;
+margin-top: 8%;
+}
+.cover-search-in h2{
+padding-bottom: 10px !important;
+}
+.cover-search-in select, .cover-search-in input{
+margin-bottom: 0px !important;
+}
+.content {
+    max-width: 995px;
+    margin: 0 auto;
+	padding-top: 30px;
+    min-height: 650px;
+}
+.korisnik{
+text-align: right;
+}
+.navigation{
+padding-left: 20px;
+padding-top: 20px;
+}
+
+/*FORMA ZA IZRADU OGLASA*/
+input.form-field-text{
+width: 100%;
+font-size: 1em !important;
+padding: 0.41667em !important;
+border-radius: 4px !important;
+}
+form#forma-izrada-oglasa td{
+font-weight: bold;
+min-width: 220px;
+height: 40px;
+}
+textarea#opis, textarea#kratkiopis{
+width: 100%;
+font-size: 1em !important;
+padding: 0.41667em !important;
+border-radius: 4px !important;
+}
+input.form-field-karakteristike{
+width: 100px;
+font-size: 1em !important;
+padding: 0.41667em !important;
+border-radius: 4px !important;
+}
+select.form-field-karakteristike1{
+width: 230px;
+font-size: 1em !important;
+padding: 0.1em !important;
+border-radius: 4px !important;
+}
+input.form-field-karakteristike2{
+width: 210px;
+font-size: 1em !important;
+padding: 0.41667em !important;
+border-radius: 4px !important;
+}
+
+/*kategorija apartmani*/
+.kategorija-apartmani{
+ background-image: url('images/apartman-icon.png');
+  width: 256px;
+  height: 256px;
+  display: block;
+  float: left;
+  margin: 2%;
+  border: 2px solid #595959; /*#D83B2D*/
+  transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+-moz-box-shadow:    7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+box-shadow:         7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+}
+.kategorija-apartmani:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+-webkit-box-shadow:  0 1px 4px rgba(0, 105, 214, 0.25);
+-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+background-color: #E4F4FF;
+}
+.kategorija-apartmani a{
+width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  
+}
+.kategorija-apartmani h3{
+ color: #007AB8;
+  margin-top: 18px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  /*kategorija apartmani*/
+  
+  /*kategorija hoteli*/
+.kategorija-hoteli{
+ background-image: url('images/hotel-icon.png');
+  width: 256px;
+  height: 256px;
+  display: block;
+  float: left;
+  margin: 2%;
+  border: 2px solid #595959; /*#D83B2D*/
+  transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+-moz-box-shadow:    7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+box-shadow:         7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+}
+.kategorija-hoteli:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+-webkit-box-shadow:  0 1px 4px rgba(0, 105, 214, 0.25);
+-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+background-color: #E4F4FF;
+}
+.kategorija-hoteli a{
+width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  
+}
+.kategorija-hoteli h3{
+ color: #007AB8;
+  margin-top: 18px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  /*kategorija hoteli*/
+  
+    /*kategorija hosteli*/
+.kategorija-hosteli{
+ background-image: url('images/hostel-icon.png');
+  width: 256px;
+  height: 256px;
+  display: block;
+  float: left;
+  margin: 2%;
+  border: 2px solid #595959; /*#D83B2D*/
+  transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+-moz-box-shadow:    7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+box-shadow:         7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+}
+.kategorija-hosteli:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+-webkit-box-shadow:  0 1px 4px rgba(0, 105, 214, 0.25);
+-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+background-color: #E4F4FF;
+}
+.kategorija-hosteli a{
+width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  
+}
+.kategorija-hosteli h3{
+ color: #007AB8;
+  margin-top: 18px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  /*kategorija hoteli*/
+ 
+     /*kategorija kampovi*/
+.kategorija-kampovi{
+ background-image: url('images/kamp-icon.png');
+  width: 256px;
+  height: 256px;
+  display: block;
+  float: left;
+  margin: 2%;
+  border: 2px solid #595959; /*#D83B2D*/
+  transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+-moz-box-shadow:    7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+box-shadow:         7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+}
+.kategorija-kampovi:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+-webkit-box-shadow:  0 1px 4px rgba(0, 105, 214, 0.25);
+-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+background-color: #E4F4FF;
+}
+.kategorija-kampovi a{
+width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  
+}
+.kategorija-kampovi h3{
+ color: #007AB8;
+  margin-top: 18px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  /*kategorija kampovi*/
+  
+  /*kategorija ostalo*/
+.kategorija-ostalo{
+ background-image: url('images/ostalo-icon.png');
+  width: 256px;
+  height: 256px;
+  display: block;
+  float: left;
+  margin: 2%;
+  border: 2px solid #595959; /*#D83B2D*/
+  transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+  
+  /*box shadow*/
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+-moz-box-shadow:    7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+box-shadow:         7px 7px 11px 0px rgba(46, 50, 50, 0.71);
+}
+.kategorija-ostalo:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+-webkit-box-shadow:  0 1px 4px rgba(0, 105, 214, 0.25);
+-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+background-color: #E4F4FF;
+}
+.kategorija-ostalo a{
+width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  
+}
+.kategorija-ostalo h3{
+ color: #007AB8;
+  margin-top: 18px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  /*kategorija ostalo*/
+ 
+.footer {
+background-color: #CAE9FF;
+height: 45px;
+padding-left: 20%;
+padding-top: 20px;
+margin-top: 30px;
+}
+
